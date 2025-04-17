@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* .questions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+} */
+
+.question {
+  /* display: flex; */
+  color: black;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
