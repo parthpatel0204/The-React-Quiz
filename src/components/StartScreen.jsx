@@ -1,8 +1,10 @@
+import AllButton from "./AllButton";
+
 function StartScreen({ startQuiz }) {
   return (
-    <div>
-      <h2>THE REACT QUIZ</h2>
-      <button onClick={startQuiz}>Let's Start</button>
+    <div className="text-center">
+      <h2 className="mb-6 text-4xl font-bold">THE REACT QUIZ</h2>
+      <AllButton onClick={startQuiz}>Let's Start</AllButton>
     </div>
   );
 }

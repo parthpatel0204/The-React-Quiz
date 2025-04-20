@@ -52,8 +52,12 @@ function App() {
     console.log("selected");
   }
 
+  // function handleSelectAnswer(answer) {
+  //   setSelectedAnswers(answer);
+  // }
+
   return (
-    <>
+    <div className="flex h-screen place-items-center justify-center bg-[#ddddff75] align-middle font-roboto">
       {currentQuestion >= quizData.length ? (
         <EndScreen point={point} />
       ) : start ? (
@@ -64,11 +68,12 @@ function App() {
           backQuestion={backQuestion}
           selectOption={selectOption}
           selectedAnswers={selectedAnswers}
+          // handleSelectAnswer={handleSelectAnswer}
         />
       ) : (
         <StartScreen startQuiz={startQuiz} />
       )}
-    </>
+    </div>
   );
 }
 
